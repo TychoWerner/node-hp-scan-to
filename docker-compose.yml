@@ -10,8 +10,8 @@ services:
     environment:
       - IP=10.98.10.31
       - PATTERN="scan"_dd.mm.yyyy_hh:MM:ss
-      - PGID=1026
-      - PUID=100
+      - PGID=100
+      - PUID=1026
       - TZ=Europe/Amsterdam
     volumes:
       - /volume1/docker/paperlessngx/consume:/scan
