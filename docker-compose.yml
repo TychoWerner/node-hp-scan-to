@@ -9,7 +9,7 @@ services:
     hostname: Paperless
     environment:
       - IP=10.98.10.31
-      - PATTERN="scan"_yyyy/mm/dd_HH:MM:ss
+      - PATTERN="scan"_yyyy-mm-dd_HH-MM-ss
       - PGID=100
       - PUID=1026
       - TZ=Europe/Amsterdam
