@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  node-hp-scan-to:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node-hp-scan-to
+    hostname: scan
+    environment:
+      - IP=10.98.10.31
+      - PATTERN="scan"_dd.mm.yyyy_hh:MM:ss
+      - PGID=1026
+      - PUID=100
+      - TZ=Europe/Amsterdam
+    volumes:
+      - /volume1/docker/paperlessngx/consume:/scan
+    restart: always
